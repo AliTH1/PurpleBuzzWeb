@@ -1,4 +1,6 @@
-﻿namespace PurpleBuzzWeb.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PurpleBuzzWeb.Models
 {
     public class Category
     {
@@ -8,7 +10,7 @@
         }
 
         public int Id { get; set; }
-        public int Name { get; set; }
+        public string Name { get; set; }
         public bool IsDeleted { get; set; }
         public List<Service> Services { get; set; }
     }

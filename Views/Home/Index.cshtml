@@ -1,8 +1,7 @@
-﻿@using PurpleBuzzWeb.Models;
-@{
+﻿@{
     ViewBag.Title = "Home";
 }
-@model List<Slider>
+@model HomeVM
 <!-- Start Banner Hero -->
 <div class="banner-wrapper bg-light">
     <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
@@ -16,7 +15,7 @@
             </ol>
             <div class="carousel-inner">
 
-                @foreach (Slider item in Model)
+                @foreach (Slider item in Model.Sliders)
                 {
                     <div class="carousel-item @(item.IsActive? "active":"")">
                         

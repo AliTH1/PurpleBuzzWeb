@@ -1,0 +1,12 @@
+﻿@using PurpleBuzzWeb.Models;
+@model WorkCategory
+
+<form style="width: 250px;" method="post" action="Create">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" placeholder="Enter work category name">
+        <span class="text text-danger" asp-validation-for="Name"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <button class="btn btn-inverse-outline-dark" asp-action="Index">Go back</button>
+</form>

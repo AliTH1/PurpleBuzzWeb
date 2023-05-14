@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using PurpleBuzzWeb.DAL;
 using PurpleBuzzWeb.Models;
+using PurpleBuzzWeb.ViewModels;
 
 namespace PurpleBuzzWeb.Controllers
 {
@@ -14,8 +15,20 @@ namespace PurpleBuzzWeb.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<Slider> sliders = await _appDbContext.Sliders.ToListAsync();
-            return View(sliders);
+
+            HomeVM homeVM = new HomeVM()
+            {
+                Sliders = await _appDbContext.Sliders.ToListAsync(),
+                Categories = await _appDbContext.Categories.Where(c => !c.IsDeleted).ToListAsync(),
+                Services = await _appDbContext.Services
+                .Include(s => s.Category)
+                .Include(s => s.ServiceImages)
+                .OrderByDescending(s => s.Id)
+                .Where(s => !s.IsDeleted)
+                .Take(8)
+                .ToListAsync()
+            };
+            return View(homeVM);
         }
 
 

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<WorkCategory>
+@{
     ViewBag.Title = "Work";
 }
 
@@ -24,12 +25,14 @@
 <!-- Start Our Work -->
 <section class="container py-5">
     <div class="row justify-content-center my-5">
+        <div class="create d-flex justify-content-end">
+            <a class="btn btn-success text-light">Create category</a>
+        </div>
         <div class="filter-btns shadow-md rounded-pill text-center col-auto">
-            <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4 active" data-filter=".project" href="#">All</a>
-            <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".business" href="#">Business</a>
-            <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".marketing" href="#">Marketing</a>
-            <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".social" href="#">Social Media</a>
-            <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".graphic" href="#">Graphic</a>
+            @foreach (WorkCategory workCategory in Model)
+            {
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".@workCategory.Name.ToLower().Trim()" href="#">@workCategory.Name</a>
+            }
         </div>
     </div>
 
