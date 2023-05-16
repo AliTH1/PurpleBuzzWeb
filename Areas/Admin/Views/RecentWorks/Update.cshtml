@@ -1,0 +1,21 @@
+﻿@using PurpleBuzzWeb.Models;
+@model RecentWork
+
+<form style="width: 250px;" method="post">
+    <div class="form-group">
+        <label asp-for="CardTitle"></label>
+        <input asp-for="CardTitle" class="form-control" placeholder="Enter card title">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CardText"></label>
+        <input asp-for="CardText" class="form-control" placeholder="Enter card text">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImagePath"></label>
+        <input asp-for="ImagePath" class="form-control" placeholder="Enter img path">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button class="btn btn-inverse-outline-dark" asp-action="Index">Go back</button>
+</form>

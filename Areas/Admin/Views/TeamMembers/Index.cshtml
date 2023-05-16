@@ -1,0 +1,39 @@
+﻿@using PurpleBuzzWeb.Models;
+@model ICollection<TeamMember>
+@{
+    int count = 1;
+}
+
+
+<div class="d-flex justify-content-end">
+    <a class="btn btn-success" asp-controller="TeamMembers" asp-action="Create">Create</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Profession</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (TeamMember teamMember in Model)
+        {
+            <tr>
+                <td>@count</td>
+                <td>@teamMember.FullName</td>
+                <td>@teamMember.Profession</td>
+                @{
+                    count++;
+                }
+
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a class="btn btn-info text-light ml-3" asp-action="Update" asp-route-id="@teamMember.Id">Update</a>
+                        <a class="btn btn-danger text-light ml-3" asp-action="Delete" asp-route-id="@teamMember.Id">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

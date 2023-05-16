@@ -15,6 +15,8 @@ namespace PurpleBuzzWeb.DAL
         public DbSet<Service> Services { get; set; }
         public DbSet<ServiceImage> ServiceImages { get; set; }
         public DbSet<WorkCategory> WorkCategories { get; set; }
+        public DbSet<TeamMember> TeamMembers { get; set; }
+        public DbSet<RecentWork> RecentWorks { get; set; }
 
     }
 }

@@ -26,7 +26,8 @@ namespace PurpleBuzzWeb.Controllers
                 .OrderByDescending(s => s.Id)
                 .Where(s => !s.IsDeleted)
                 .Take(8)
-                .ToListAsync()
+                .ToListAsync(),
+                RecentWorks = await _appDbContext.RecentWorks.ToListAsync()
             };
             return View(homeVM);
         }

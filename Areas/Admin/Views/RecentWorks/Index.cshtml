@@ -1,0 +1,41 @@
+﻿@using PurpleBuzzWeb.Models;
+@model ICollection<RecentWork>
+@{
+    int count = 1;
+}
+
+
+<div class="d-flex justify-content-end">
+    <a class="btn btn-success" asp-controller="RecentWorks" asp-action="Create">Create</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Card title</th>
+            <th scope="col">Card text</th>
+            <th scope="col">ImagePath</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (RecentWork recentWork in Model)
+        {
+            <tr>
+                <td>@count</td>
+                <td>@recentWork.CardTitle</td>
+                <td>@recentWork.CardText</td>
+                <td>@recentWork.ImagePath</td>
+                @{
+                    count++;
+                }
+
+                <td>
+                    <div class="d-flex justify-content-end">
+                        <a class="btn btn-info text-light ml-3" asp-action="Update" asp-route-id="@recentWork.Id">Update</a>
+                        <a class="btn btn-danger text-light ml-3" asp-action="Delete" asp-route-id="@recentWork.Id">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
