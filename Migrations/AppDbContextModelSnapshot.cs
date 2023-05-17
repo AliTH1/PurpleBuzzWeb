@@ -38,7 +38,7 @@ namespace PurpleBuzzWeb.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("PurpleBuzzWeb.Models.RecentWork", b =>
@@ -63,7 +63,7 @@ namespace PurpleBuzzWeb.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("RecentWorks");
+                    b.ToTable("RecentWorks", (string)null);
                 });
 
             modelBuilder.Entity("PurpleBuzzWeb.Models.Service", b =>
@@ -95,7 +95,7 @@ namespace PurpleBuzzWeb.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Services");
+                    b.ToTable("Services", (string)null);
                 });
 
             modelBuilder.Entity("PurpleBuzzWeb.Models.ServiceImage", b =>
@@ -120,7 +120,7 @@ namespace PurpleBuzzWeb.Migrations
 
                     b.HasIndex("ServiceId");
 
-                    b.ToTable("ServiceImages");
+                    b.ToTable("ServiceImages", (string)null);
                 });
 
             modelBuilder.Entity("PurpleBuzzWeb.Models.Slider", b =>
@@ -148,7 +148,7 @@ namespace PurpleBuzzWeb.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders");
+                    b.ToTable("Sliders", (string)null);
                 });
 
             modelBuilder.Entity("PurpleBuzzWeb.Models.TeamMember", b =>
@@ -174,7 +174,7 @@ namespace PurpleBuzzWeb.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TeamMembers");
+                    b.ToTable("TeamMembers", (string)null);
                 });
 
             modelBuilder.Entity("PurpleBuzzWeb.Models.WorkCategory", b =>
@@ -195,7 +195,7 @@ namespace PurpleBuzzWeb.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("WorkCategories");
+                    b.ToTable("WorkCategories", (string)null);
                 });
 
             modelBuilder.Entity("PurpleBuzzWeb.Models.Service", b =>

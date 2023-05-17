@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PurpleBuzzWeb.Areas.ViewModels;
 using PurpleBuzzWeb.DAL;
 using PurpleBuzzWeb.Models;
+using PurpleBuzzWeb.Utilities.Extensions;
 
 namespace PurpleBuzzWeb.Areas.Admin.Controllers
 {
@@ -9,9 +11,11 @@ namespace PurpleBuzzWeb.Areas.Admin.Controllers
     public class RecentWorksController : Controller
     {
         private readonly AppDbContext _appDbContext;
-        public RecentWorksController(AppDbContext appDbContext)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public RecentWorksController(AppDbContext appDbContext, IWebHostEnvironment webHostEnvironment)
         {
             _appDbContext = appDbContext;
+            _webHostEnvironment = webHostEnvironment;
         }
         public async Task<IActionResult> Index()
         {
@@ -26,10 +30,8 @@ namespace PurpleBuzzWeb.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(RecentWork recentWork)
+        public async Task<IActionResult> Create(RecentWorksVM recentWork)
         {
-            RecentWork recentWork1 = new();
-
             bool isExists = await _appDbContext.RecentWorks.AnyAsync(x => x.Id == recentWork.Id);
 
             if (isExists)
@@ -37,14 +39,30 @@ namespace PurpleBuzzWeb.Areas.Admin.Controllers
                 ModelState.AddModelError("Recent Work", "Recent work alredy exists");
                 return View();
             }
+            if (!recentWork.Photo.CheckContentType("image/"))
+            {
+                ModelState.AddModelError("Photo", "File type must be image");
+                return View();
+            }
+            if (!recentWork.Photo.CheckFileSize(200))
+            {
+                ModelState.AddModelError("Photo", "Image file must be size less than 200kb");
+                return View();
+            }
 
-            recentWork1.CardTitle = recentWork.CardTitle;
-            recentWork1.CardText = recentWork.CardText;
-            recentWork1.ImagePath = recentWork.ImagePath;
+            string root = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "img");
+            string fileName = await recentWork.Photo.SaveAsync(root);
 
-            await _appDbContext.RecentWorks.AddAsync(recentWork1);
+            RecentWork recentWork1 = new RecentWork()
+            {
+                CardTitle = recentWork.CardTitle,
+                CardText = recentWork.CardText,
+                ImagePath = fileName
+            };
+
+            await _appDbContext.AddAsync(recentWork1);
             await _appDbContext.SaveChangesAsync();
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
@@ -87,6 +105,13 @@ namespace PurpleBuzzWeb.Areas.Admin.Controllers
             if (recentWork == null)
             {
                 return NotFound();
+            }
+
+            string imgPath = Path.Combine(_webHostEnvironment.WebRootPath, "assets",
+                "img", recentWork.ImagePath);
+            if (System.IO.File.Exists(imgPath))
+            {
+                System.IO.File.Delete(imgPath);
             }
 
             _appDbContext.RecentWorks.Remove(recentWork);

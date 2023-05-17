@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mjv21fZI1Vqh4ci/j6XIKHyNiKtFsIcZ6mJhzGODnEs=",
+  "Hash": "XwSMTaCoE3jjbdoB1Ull4HOJYz/3uqdI4UuMF8CuaqU=",
   "Source": "PurpleBuzzWeb",
   "BasePath": "_content/PurpleBuzzWeb",
   "Mode": "Default",
@@ -62915,6 +62915,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\boxicons.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\3867e33f-6793-4da9-838d-84d14c62a5d11508750569162180678.jpg",
+      "SourceId": "PurpleBuzzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
+      "BasePath": "_content/PurpleBuzzWeb",
+      "RelativePath": "assets/img/3867e33f-6793-4da9-838d-84d14c62a5d11508750569162180678.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\3867e33f-6793-4da9-838d-84d14c62a5d11508750569162180678.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\ac352278-add8-480e-b06c-702ed2c2698c06.jpg",
+      "SourceId": "PurpleBuzzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
+      "BasePath": "_content/PurpleBuzzWeb",
+      "RelativePath": "assets/img/ac352278-add8-480e-b06c-702ed2c2698c06.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\ac352278-add8-480e-b06c-702ed2c2698c06.jpg"
     },
     {
       "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\apple-icon.png",
