@@ -1,0 +1,51 @@
+﻿@using PurpleBuzzWeb.Models;
+@model List<Service>
+@{
+    ViewData["Title"] = "Service";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    int count = 1;
+}
+
+
+<div class="d-flex justify-content-end">
+    <a class="btn btn-success" asp-controller="Services" asp-action="Create">Create</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Service service in Model)
+        {
+            <tr>
+                <th scope="row">@count</th>
+                <td>@service.Name</td>
+                <td>@service.Description</td>
+                <td>@service.Category.Name</td>
+                <td>@service.Price</td>
+                <td>
+                    <img src="~/assets/img/@service.ServiceImages.FirstOrDefault(s=>s.IsActive).Path" style="height:100px; width:100px;">
+                </td>
+
+                <td>
+                    <a class="btn btn-warning text-light" asp-area="Admin" asp-controller="Services" asp-action="Update" asp-route-Id="@service.Id">
+                        <i class="mdi mdi-grease-pencil"></i>
+                    </a>
+                    <a class="btn btn-danger text-light" asp-area="Admin" asp-controller="Services" asp-action="Delete" asp-route-Id="@service.Id">
+                        <i class="mdi mdi-delete-forever"></i>
+                    </a>
+                </td>
+            </tr>
+
+            count++;
+        }
+    </tbody>
+</table>

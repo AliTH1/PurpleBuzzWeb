@@ -14801,12 +14801,8 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\3867e33f-6793-4da9-838d-84d14c62a5d11508750569162180678.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\3867e33f-6793-4da9-838d-84d14c62a5d11508750569162180678.jpg"
-    },
-    {
-      "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\ac352278-add8-480e-b06c-702ed2c2698c06.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\ac352278-add8-480e-b06c-702ed2c2698c06.jpg"
+      "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\25d0b2a7-c891-4eb8-8079-1cceb1c942c110.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\25d0b2a7-c891-4eb8-8079-1cceb1c942c110.jpg"
     },
     {
       "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\apple-icon.png",
@@ -14831,6 +14827,10 @@
     {
       "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\banner-img-02.svg",
       "PackagePath": "staticwebassets\\assets\\img\\banner-img-02.svg"
+    },
+    {
+      "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\d84b9edc-e6b7-40d1-bed4-f05a1839116dID.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\d84b9edc-e6b7-40d1-bed4-f05a1839116dID.jpeg"
     },
     {
       "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\favicon.ico",
@@ -14907,10 +14907,6 @@
     {
       "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\recent-work-03.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\recent-work-03.jpg"
-    },
-    {
-      "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\recent-work-04.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\recent-work-04.jpg"
     },
     {
       "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\recent-work-05.jpg",

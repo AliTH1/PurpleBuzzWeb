@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PurpleBuzzWeb.Areas.ViewModels;
+using PurpleBuzzWeb.Areas.Admin.ViewModels;
 using PurpleBuzzWeb.DAL;
 using PurpleBuzzWeb.Models;
 using PurpleBuzzWeb.Utilities.Extensions;

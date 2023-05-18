@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XwSMTaCoE3jjbdoB1Ull4HOJYz/3uqdI4UuMF8CuaqU=",
+  "Hash": "RtF5nj2sUjzUWH0D7+/HSMXcNHlf+Rr8XVz2Z7KRZg0=",
   "Source": "PurpleBuzzWeb",
   "BasePath": "_content/PurpleBuzzWeb",
   "Mode": "Default",
@@ -62917,12 +62917,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\boxicons.woff2"
     },
     {
-      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\3867e33f-6793-4da9-838d-84d14c62a5d11508750569162180678.jpg",
+      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\25d0b2a7-c891-4eb8-8079-1cceb1c942c110.jpg",
       "SourceId": "PurpleBuzzWeb",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
       "BasePath": "_content/PurpleBuzzWeb",
-      "RelativePath": "assets/img/3867e33f-6793-4da9-838d-84d14c62a5d11508750569162180678.jpg",
+      "RelativePath": "assets/img/25d0b2a7-c891-4eb8-8079-1cceb1c942c110.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -62931,24 +62931,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\3867e33f-6793-4da9-838d-84d14c62a5d11508750569162180678.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\ac352278-add8-480e-b06c-702ed2c2698c06.jpg",
-      "SourceId": "PurpleBuzzWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
-      "BasePath": "_content/PurpleBuzzWeb",
-      "RelativePath": "assets/img/ac352278-add8-480e-b06c-702ed2c2698c06.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\ac352278-add8-480e-b06c-702ed2c2698c06.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\25d0b2a7-c891-4eb8-8079-1cceb1c942c110.jpg"
     },
     {
       "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\apple-icon.png",
@@ -63051,6 +63034,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\banner-img-02.svg"
+    },
+    {
+      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\d84b9edc-e6b7-40d1-bed4-f05a1839116dID.jpeg",
+      "SourceId": "PurpleBuzzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
+      "BasePath": "_content/PurpleBuzzWeb",
+      "RelativePath": "assets/img/d84b9edc-e6b7-40d1-bed4-f05a1839116dID.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\d84b9edc-e6b7-40d1-bed4-f05a1839116dID.jpeg"
     },
     {
       "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\favicon.ico",
@@ -63374,23 +63374,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\recent-work-03.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\recent-work-04.jpg",
-      "SourceId": "PurpleBuzzWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
-      "BasePath": "_content/PurpleBuzzWeb",
-      "RelativePath": "assets/img/recent-work-04.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\recent-work-04.jpg"
     },
     {
       "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\recent-work-05.jpg",
