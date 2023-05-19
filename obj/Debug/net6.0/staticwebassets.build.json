@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RtF5nj2sUjzUWH0D7+/HSMXcNHlf+Rr8XVz2Z7KRZg0=",
+  "Hash": "Nu21I7/Ga3Vrkzb9Yy5rxVQgkwfdgWWhWV4x89xpae0=",
   "Source": "PurpleBuzzWeb",
   "BasePath": "_content/PurpleBuzzWeb",
   "Mode": "Default",
@@ -62934,6 +62934,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\25d0b2a7-c891-4eb8-8079-1cceb1c942c110.jpg"
     },
     {
+      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\548dc7b3-c3f3-4307-a522-559cb712c54fProfile-Icon-SVG-09856789.png",
+      "SourceId": "PurpleBuzzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
+      "BasePath": "_content/PurpleBuzzWeb",
+      "RelativePath": "assets/img/548dc7b3-c3f3-4307-a522-559cb712c54fProfile-Icon-SVG-09856789.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\548dc7b3-c3f3-4307-a522-559cb712c54fProfile-Icon-SVG-09856789.png"
+    },
+    {
       "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\apple-icon.png",
       "SourceId": "PurpleBuzzWeb",
       "SourceType": "Discovered",
@@ -63051,6 +63068,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\d84b9edc-e6b7-40d1-bed4-f05a1839116dID.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\f5a8bd99-f35b-4db2-b6cb-b4b6e7d0fbe8school.png",
+      "SourceId": "PurpleBuzzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
+      "BasePath": "_content/PurpleBuzzWeb",
+      "RelativePath": "assets/img/f5a8bd99-f35b-4db2-b6cb-b4b6e7d0fbe8school.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\f5a8bd99-f35b-4db2-b6cb-b4b6e7d0fbe8school.png"
     },
     {
       "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\img\\favicon.ico",

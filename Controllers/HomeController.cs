@@ -18,20 +18,11 @@ namespace PurpleBuzzWeb.Controllers
 
             HomeVM homeVM = new HomeVM()
             {
-                Sliders = await _appDbContext.Sliders.ToListAsync(),
                 Categories = await _appDbContext.Categories.Where(c => !c.IsDeleted).ToListAsync(),
-                Services = await _appDbContext.Services
-                .Include(s => s.Category)
-                .Include(s => s.ServiceImages)
-                .OrderByDescending(s => s.Id)
-                .Where(s => !s.IsDeleted)
-                .Take(8)
-                .ToListAsync(),
                 RecentWorks = await _appDbContext.RecentWorks.ToListAsync()
             };
             return View(homeVM);
         }
-
 
     }
 }

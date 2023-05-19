@@ -77,6 +77,29 @@ namespace PurpleBuzzWeb.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            Service? service = await _context.Services.FindAsync(id);
+
+            if (service == null) return NotFound();
+            string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "img",
+                service.ServiceImages.FirstOrDefault(c => c.ServiceId == id).Path);
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
+            }
+
+            _context.Services.Remove(service);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+
+
+
+
+
         private async Task<List<ServiceImage>> CreateAndGetServiceImages(
             List<IFormFile> photos, string rootPath)
         {
@@ -84,7 +107,7 @@ namespace PurpleBuzzWeb.Areas.Admin.Controllers
             foreach (IFormFile photo in photos)
             {
                 string fileName = await photo.SaveAsync(rootPath);
-                ServiceImage serviceImage = new ServiceImage() { Path = fileName};
+                ServiceImage serviceImage = new ServiceImage() { Path = fileName };
                 if (!serviceImages.Any(i => i.IsActive))
                 {
                     serviceImage.IsActive = true;
