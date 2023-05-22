@@ -12,6 +12,11 @@
                     <p class="card-text">@service.Description</p>
                 </div>
             </div>
+
+
+            <div class="card-footer text-center">
+                <a class="btn btn-outline-primary rounded-pill" asp-controller="Basket" asp-action="AddBasket" asp-route-id="@service.Id">Add Basket</a>
+            </div>
         </a>
     </div>
     <!-- End Recent Work -->

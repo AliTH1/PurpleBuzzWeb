@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nu21I7/Ga3Vrkzb9Yy5rxVQgkwfdgWWhWV4x89xpae0=",
+  "Hash": "88OB/ihTNTsJEu4WZtlA/ibk85FAxjr8uCXS2wMn03A=",
   "Source": "PurpleBuzzWeb",
   "BasePath": "_content/PurpleBuzzWeb",
   "Mode": "Default",
@@ -62830,6 +62830,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\templatemo.css"
+    },
+    {
+      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\font-awesome\\css\\all.min.css",
+      "SourceId": "PurpleBuzzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
+      "BasePath": "_content/PurpleBuzzWeb",
+      "RelativePath": "assets/font-awesome/css/all.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\font-awesome\\js\\all.min.js",
+      "SourceId": "PurpleBuzzWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\",
+      "BasePath": "_content/PurpleBuzzWeb",
+      "RelativePath": "assets/font-awesome/js/all.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\font-awesome\\js\\all.min.js"
     },
     {
       "Identity": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\fonts\\boxicons.eot",

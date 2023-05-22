@@ -14781,6 +14781,14 @@
       "PackagePath": "staticwebassets\\assets\\css\\templatemo.css"
     },
     {
+      "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\assets\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\font-awesome\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\assets\\font-awesome\\js\\all.min.js"
+    },
+    {
       "Id": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\wwwroot\\assets\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\boxicons.eot"
     },
