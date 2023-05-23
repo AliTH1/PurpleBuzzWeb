@@ -32,48 +32,43 @@
                 <div class="row w-100">
                     <div class="col-lg-4 mx-auto">
                         <div class="auto-form-wrapper">
-                            <form action="#">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <form class="pt-3" method="post">
                                 <div class="form-group">
                                     <label asp-for="Email"></label>
                                     <div class="input-group">
-                                        <input asp-for="Email" class="form-control" placeholder="Email">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">
-                                                <i class="mdi mdi-check-circle-outline"></i>
+                                        <div class="input-group-prepend bg-transparent">
+                                            <span class="input-group-text bg-transparent border-right-0">
+                                                <i class="mdi mdi-account-outline text-primary"></i>
                                             </span>
                                         </div>
+                                        <input asp-for="Email" class="form-control form-control-lg border-left-0" placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label asp-for="Password"></label>
                                     <div class="input-group">
-                                        <input asp-for="Password" class="form-control" placeholder="*********">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">
-                                                <i class="mdi mdi-check-circle-outline"></i>
+                                        <div class="input-group-prepend bg-transparent">
+                                            <span class="input-group-text bg-transparent border-right-0">
+                                                <i class="mdi mdi-lock-outline text-primary"></i>
                                             </span>
                                         </div>
+                                        <input class="form-control form-control-lg border-left-0" asp-for="Password" placeholder=" Password">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <button class="btn btn-primary submit-btn btn-block">Login</button>
-                                </div>
-                                <div class="form-group d-flex justify-content-between">
-                                    <div class="form-check form-check-flat mt-0">
-                                        <label class="form-check-label">
-                                            <input asp-for="RememberMe" class="form-check-input" checked> Keep me signed in
+                                <div class="my-2 d-flex justify-content-between align-items-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label text-muted">
+                                            <input asp-for="RememberMe" class="form-check-input">
+                                            Keep me signed in
                                         </label>
                                     </div>
-                                    <a href="#" class="text-small forgot-password text-black">Forgot Password</a>
                                 </div>
-                                <div class="form-group">
-                                    <button class="btn btn-block g-login">
-                                        <img class="mr-3" src="~/admin/assets/images/file-icons/icon-google.svg" alt="">Log in with Google
-                                    </button>
+                                <div class="my-3">
+                                    <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">LOGIN</button>
                                 </div>
-                                <div class="text-block text-center my-3">
-                                    <span class="text-small font-weight-semibold">Not a member ?</span>
-                                    <a asp-controller="Account" asp-action="Register" class="text-black text-small">Create new account</a>
+                                <div class="text-center mt-4 font-weight-light">
+                                    Don't have an account? <a asp-controller="Account" asp-action="Register">Register</a>
                                 </div>
                             </form>
                         </div>
