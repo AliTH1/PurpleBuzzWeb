@@ -1,4 +1,4 @@
-let dbServiceCount = $("#dbServiceCount").val()
+﻿let dbServiceCount = $("#dbServiceCount").val()
 
 $("#btnLoadMore").on("click", () => {
     let serviceCount = $("#services").children().length

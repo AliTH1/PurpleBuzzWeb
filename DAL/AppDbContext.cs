@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PurpleBuzzWeb.Models;
+using PurpleBuzzWeb.Models.Auth;
 
 namespace PurpleBuzzWeb.DAL
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {

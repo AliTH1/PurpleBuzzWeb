@@ -35,7 +35,24 @@
             <div class="navbar align-self-center d-flex">
                 <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
                 <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
-                <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class='bx bx-user-circle bx-sm text-primary'></i>
+                    </button>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">@User.Identity.Name</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="LogOut">Log Out</a></li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="Login">Log In</a></li>
+                        </ul>
+                    }
+                </div>
                 <a class="nav-link" asp-controller="Basket" asp-action="Index"><i class="fs-5 fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>

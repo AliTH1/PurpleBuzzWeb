@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aqGlIJzTUzae+DfD8pSIgdixDVL81Xu2NJnQ6Seyey4n4jhcyMv4wmg1Fal9NJBh5jDV5D3ctlHbzlhHWdwvlg==",
+  "dgSpecHash": "tMhl5GhO2VMSER2gc8bkhk0EnAkXUe5LfFrfk3iOhm8HcE5zu71q1VKIugePTeOXXL0VJnoctb0maKAxLNtjKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\alita\\source\\repos\\PurpleBuzzWeb\\PurpleBuzzWeb.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\alita\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\alita\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.16\\microsoft.aspnetcore.cryptography.internal.6.0.16.nupkg.sha512",
+    "C:\\Users\\alita\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.16\\microsoft.aspnetcore.cryptography.keyderivation.6.0.16.nupkg.sha512",
+    "C:\\Users\\alita\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.16\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.16.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
@@ -44,6 +47,8 @@
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\alita\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.16\\microsoft.extensions.identity.core.6.0.16.nupkg.sha512",
+    "C:\\Users\\alita\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.16\\microsoft.extensions.identity.stores.6.0.16.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\alita\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",

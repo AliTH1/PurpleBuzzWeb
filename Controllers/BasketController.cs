@@ -44,7 +44,8 @@ namespace PurpleBuzzWeb.Controllers
             return View(basketItemVMs);
         }
 
-        public IActionResult AddBasket(int id)
+
+        public void AddBasket(int id)
         {
             List<BasketVM> basketVMs;
 
@@ -75,8 +76,15 @@ namespace PurpleBuzzWeb.Controllers
 
             }
             Response.Cookies.Append(COOKIES_BASKET, JsonConvert.SerializeObject(basketVMs));
-
-            return RedirectToAction(nameof(Index));
         }
+
+
+        //public async Task<IActionResult> IncreaseItemInBasket(int id, BasketItemVM basketItemVM)
+        //{
+        //    BasketItemVM basketItem = await 
+
+        //    return RedirectToAction(nameof(Index));
+
+        //}
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PurpleBuzzWeb.Areas.Admin.ViewModels;
 using PurpleBuzzWeb.DAL;
@@ -8,6 +9,7 @@ using PurpleBuzzWeb.Utilities.Extensions;
 namespace PurpleBuzzWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class ServicesController : Controller
     {
         private readonly AppDbContext _context;

@@ -26,7 +26,18 @@
                     <td>@item.CategoryName</td>
                     <td>@item.ServiceCount</td>
                     <td>@(item.Price * item.ServiceCount)</td>
-
+                    <td>
+                        <a class="btn btn-success text-light" asp-controller="Basket"
+                       asp-action="IncreaseItemInBasket" asp-route-id="@item.Id">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <a class="btn btn-danger text-light">
+                            <i class="fa-solid fa-minus"></i>
+                        </a>
+                        <a class="btn btn-secondary text-light">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
                 </tr>
                 count++;
             }
